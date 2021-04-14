@@ -56,15 +56,11 @@ let arr3 = [31, 10, 'chicken', 9, 'fish', '10'],
 
 // с помощью filter
 onlyStryng = arr3.filter((val ) => {
-    if ( typeof val == "string" ){
-        return true;
-    }else return false;
+    return typeof val == 'string';
 });
 
 onlyTen  = arr3.filter((val) => {
-    if(String(val) == '10'){
-        return true;
-    }else return false;
+    return String(val) == '10'
 });
 // с помощью цикла
 /*for (let val of arr3){
@@ -97,3 +93,7 @@ for (let val in person){
     function deepEqual (obj1, obj2){
     return JSON.stringify(obj1)===JSON.stringify(obj2);
 }
+let a  = {a: 1, b: undefined}
+let b = {a: 1}
+
+console.log(deepEqual(a, b));
