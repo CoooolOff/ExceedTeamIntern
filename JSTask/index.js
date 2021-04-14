@@ -50,18 +50,31 @@ arr2.splice(arr2.length-2, 2);
 //Оранжевым выделены строчные элементы
 //Необходимо получить массив в котором останутся только строки / элементы со значением 10
 
-const arr3 = [31, 10, 'chicken', 9, 'fish', '10'],
-      onlyStryng = [],
-      onlyTen    = [];
+let arr3 = [31, 10, 'chicken', 9, 'fish', '10'],
+    onlyStryng = [],
+    onlyTen    = [];
 
-for (let val of arr3){
+// с помощью filter
+onlyStryng = arr3.filter((val ) => {
+    if ( typeof val == "string" ){
+        return true;
+    }else return false;
+});
+
+onlyTen  = arr3.filter((val) => {
+    if(String(val) == '10'){
+        return true;
+    }else return false;
+});
+// с помощью цикла
+/*for (let val of arr3){
     if(typeof val == "string"){
         onlyStryng.push(val);
     }
     if(String(val) == '10'){
         onlyTen.push(val);
     }
-}
+}*/
 console.log(onlyStryng);
 console.log(onlyTen);
 
