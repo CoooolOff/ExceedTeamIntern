@@ -1,32 +1,55 @@
 body{
-    background: black;
-    padding: 0;
-    margin: 0;
+    background-color: darkgray;
 }
-h1{
-    color: azure;
-}
-.contain{
-    margin-top: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-    width: 30rem;
-    height: auto;
-    background: rgb(0,6,36);
-    background: linear-gradient(52deg, rgba(0,6,36,1) 0%, rgba(82,9,121,1) 47%, rgba(218,0,255,1) 100%);
+p{
+    font-size: 24px;
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
 }
 .select{
-    width: inherit;
-    height: 2rem;
+    position: relative;
+    display: inline-block;
+    border-color: grey;
+    border-radius: 5px;
+    background-color: white;
+    text-align-last: center;
+    font-size: 17px ;
+    width: 240px;
+    height: 37px;
+
 }
-.inputPlace{
-    margin-top: 1rem;
+.select:focus{
+    border: 1px solid #39c;
 }
-.mainButton{
-    height: 38px;
+option{
+    width: 240px;
+    height: 37px;
+}
+
+.contain{
+    border-radius: 5px;
+    margin: auto;
+    background-color: #ffffff;
+    height: 14rem;
+    width: 43rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 1px;
+
 }
 .input{
-    height: 2rem;
-    width: 85%;
+    border-radius: 5px 0 0 5px;
+    font-size: 17px;
+    border: 1px solid #a3a3a3;
+    width: 550px;
+    height: 37px;
+    display: block;
+    float: left;
+}
+
+.mainButton{
+    border-radius: 0 5px 5px 0;
+    height: 41px;
+    display: block;
+    float: left;
 }
