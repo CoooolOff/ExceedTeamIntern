@@ -47,9 +47,81 @@ option{
     float: left;
 }
 
+.input:invalid.submitting {
+    border: 1px solid red;
+    box-shadow: 0 0 0 0;
+
+}
+
+.input:focus{
+    outline: 0;
+    box-shadow: 0 0 5px #39c;
+}
 .mainButton{
+    background-color: white;
+    border: 1px solid #ccc;
     border-radius: 0 5px 5px 0;
     height: 41px;
     display: block;
     float: left;
+}
+.mainButton:focus{
+    outline: 0;
+    box-shadow: 0 0 5px #39c;
+}
+
+.select {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+}
+.select.is-active .select__header{
+    box-shadow: 0 0 5px #39c;}
+.select.is-active .select__body {
+    display: block;}
+
+.select__header {
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+}
+.select__current {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+}
+.select__icon {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+.select__body {
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+.select__item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.select__item:hover {
+    background-color: #f2f2f2;
 }
