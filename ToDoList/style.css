@@ -1,0 +1,75 @@
+body {
+    background-color: #efefef;
+}
+h1{
+    font-family: AnjaliOldLipi;
+    text-align: center;
+    font-weight: lighter;
+    color: brown;
+    font-size: 117px;
+    margin: 0;
+    opacity: 0.5;
+    width: auto;
+    height: 130px;
+
+}
+.todo_list{
+    box-shadow: 0 0 20px #ffffff;
+}
+.add{
+    position: absolute;
+    font-size: 20px;
+    border:0;
+    background-color: #fff;
+    width: 50px;
+    height: 49px;
+    display: block;
+    float: left;
+}
+.add:focus{
+    outline: 0;
+}
+.message{
+    font-size: 20px;
+    box-shadow: 0 0 20px #b8b0a5;
+    border: 0;
+    background-color: #fff;
+    height: 47px;
+    width: 88%;
+    padding-left: 58px;
+    display: block;
+}
+.message:focus{
+    outline: 0;
+}
+.wrapper{
+    }
+.todo{
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+}
+li {
+    height: 40px;
+    list-style-type: none;
+    background-color: #fff;
+    border: 1px grey;
+}
+li:hover .close{
+    display: block;
+}
+.close{
+    display: none;
+    height: inherit;
+    float: right;
+    border: 0;
+    background: none;
+}
+.close:focus{
+    outline: 0;
+}
+.container {
+    margin: auto;
+    width: 500px;
+    height: content-box;
+}
