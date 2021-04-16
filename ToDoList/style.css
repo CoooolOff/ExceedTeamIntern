@@ -1,3 +1,4 @@
+
 body {
     background-color: #efefef;
 }
@@ -13,8 +14,12 @@ h1{
     height: 130px;
 
 }
+p{
+    font: status-bar;
+    margin: 0;
+}
 .todo_list{
-    box-shadow: 0 0 20px #ffffff;
+    box-shadow: 0 0 20px #b8b0a5;
 }
 .add{
     position: absolute;
@@ -31,7 +36,7 @@ h1{
 }
 .message{
     font-size: 20px;
-    box-shadow: 0 0 20px #b8b0a5;
+
     border: 0;
     background-color: #fff;
     height: 47px;
@@ -43,25 +48,38 @@ h1{
     outline: 0;
 }
 .wrapper{
-    }
+}
 .todo{
     margin: 0;
     padding-left: 0;
     width: 100%;
 }
 li {
+    font: status-bar;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
     height: 40px;
     list-style-type: none;
     background-color: #fff;
-    border: 1px grey;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+.item{
+    text-align: end;
+}
+.check{
+    margin: 0 15px 0 15px;
 }
 li:hover .close{
     display: block;
 }
 .close{
+    margin-left: auto;
+    order: 1;
     display: none;
     height: inherit;
-    float: right;
+    float: right !important;
     border: 0;
     background: none;
 }
@@ -72,4 +90,33 @@ li:hover .close{
     margin: auto;
     width: 500px;
     height: content-box;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footerNone{
+    display: none;
+}
+.all{
+
+}
+.left {
+    margin-left: 7px;
+    width: 30%;
+}
+.control {
+    width: 40%;
+}
+
+.delCompleted{
+    width: 30%;
+    border: 0;
+}
+.delCompleted:focus{
+    outline: 0;
+}
+.check:checked + label {
+    text-decoration: line-through;
+    color: #939393;
 }
