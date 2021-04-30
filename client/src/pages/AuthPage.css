@@ -1,0 +1,68 @@
+.container{
+
+}
+.auth-page {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow:
+        /* Тень верхнего слоя */
+            0 1px 1px rgba(0,0,0,0.15),
+                /* Второй слой */
+            0 10px 0 -5px #eee,
+                /* Тень второго слоя */
+            0 10px 1px -4px rgba(0,0,0,0.15),
+                /* Третий слой */
+            0 20px 0 -10px #eee,
+                /* Тень третьего слоя */
+            0 20px 1px -9px rgba(0,0,0,0.15);
+}
+.btn-reg{
+    margin-left: 25px;
+}
+.inputField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 90%;
+}
+.validate{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+    border: none    ;
+    border-bottom: 3px solid black;
+}
+.validate:focus{
+    outline: none   ;
+}
+.authButton{
+    margin: 10px;
+    border-radius: 40px;
+    background-color: white;
+    padding: 5px 15px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+}
+a{
+    text-decoration: none;
+    color: #282c34;
+}
+a:hover{
+    color: #000;
+}
+.authButton:hover{
+    background-color: black;
+    color: white;
+    transition: color 0.5s;
+}
+.authButton:focus{
+    outline: none;
+}
